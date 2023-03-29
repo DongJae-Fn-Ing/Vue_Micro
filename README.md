@@ -1,42 +1,53 @@
+## #가동재 사원 Vue.js 토이 프로젝트입니다.
 
-가동재 사원 Vue.js 토이 프로젝트입니다.
+##2023.03.29
 
-# vue-micro
+- 메인
 
-## Project setup
+  - 완료
 
-```
-npm install
-```
+    - 레이아웃 퍼블리싱 완료
+    - 데이터 값에 따라 Tab 갯수 조정 구현
+    - 탭 기능 및 모션 구현
+    - 데이터 값에 따른 탭 아이템 구현
+    - 레프트 메뉴 퍼블리싱 및 라우팅 구현 완료
+    - 헤더 퍼블리싱 완료
+    - 컴포넌트화 완료
 
-### Compiles and hot-reloads for development
+  - 미완료
+    - 탭 아이템 안 상세 페이지 추가 계획
+    - 레프트 메뉴 상태값 저장 vuex로 구현 계획
+    - 레프트 메뉴 반응형 퍼블리싱
 
-```
-npm run serve
-```
+- 통계
 
-### Compiles and minifies for production
+  - 완료
 
-```
-npm run build
-```
+    - Axios 통신 완료
+    - 게시판 퍼블리싱 및 Axios 데이터 바인딩 완료
+    - chart.js 추가 완료
 
-### Lints and fixes files
+  - 미완료
+    - chart.js 퍼블리싱 및 데이터 바인딩 필요
+    - 전체적인 반응형 퍼블리싱 필요
 
-```
-npm run lint
-```
+- 게시판
 
-### Customize configuration
-<<<<<<< HEAD
+  - 완료
 
-# See [Configuration Reference](https://cli.vuejs.org/config/).
+    - 퍼블리싱 및 컴포넌트화 완료
+    - Axios 통신 완료
+    - 테이블 데이터 바인딩 완료
+    - 페이지네이션 기능 완료
 
-# BizMicro-ToyProject
-=======
-See [Configuration Reference](https://cli.vuejs.org/config/).
-=======
-# BizMicro-ToyProject
+  - 미완료
+    - 테이블 기능 코드 정리 필요
+    - 반응형 필요
+    - 상세페이지 필요
+    - 체크박스 셀렉트 등등 각종 테이블 기능 추가 필요
 
+  -로그인 페이지
 
->>>>>>> 6ea920a66abdad5b9f0872cb2d081e75517cb33c
+  - 미완료
+    - 로그인 페이지 퍼블리싱 및 간단한 기능구현 필요
+    - 404에러 페이지등등 필요

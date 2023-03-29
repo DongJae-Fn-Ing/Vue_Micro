@@ -78,4 +78,17 @@ export default {
   font-weight: bold;
   text-decoration: underline;
 }
+
+.page-item-prev button,
+.page-item-next button {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+.page-item-prev button,
+.page-item-next button {
+  background: url("./img/ico_arrow.png") no-repeat center;
+}
+.page-item-next button {
+  transform: rotateZ(180deg);
+}
 </style>
