@@ -6,7 +6,7 @@
           type="button"
           @click="pageSetting.first !== null ? sendPage(pageSetting.first) : ''"
         >
-          prev
+          prevs
         </button>
       </li>
       <li
