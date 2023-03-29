@@ -1,0 +1,230 @@
+@charset "utf-8";
+
+/* NotoSans */
+@font-face {
+	font-family: "NotoSans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("./font/NotoSansCJKkr-Regular.eot")
+			format("embedded-opentype"),
+		url("./font/NotoSansCJKkr-Regular.otf") format("opentype"),
+		url("./font/NotoSansCJKkr-Regular.woff2") format("woff2"),
+		url("./font//NotoSansCJKkr-Regular.woff") format("woff"),
+		url("./font/NotoSansCJKkr-Regular.ttf") format("truetype");
+}
+@font-face {
+	font-family: "NotoSans";
+	font-style: normal;
+	font-weight: 500;
+	src: url("./font/NotoSansCJKkr-Medium.eot")
+			format("embedded-opentype"),
+		url("./font/NotoSansCJKkr-Medium.otf") format("opentype"),
+		url("./font/NotoSansCJKkr-Medium.woff2") format("woff2"),
+		url("./font/NotoSansCJKkr-Medium.woff") format("woff"),
+		url("./font/NotoSansCJKkr-Medium.ttf") format("truetype");
+}
+@font-face {
+	font-family: "NotoSans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("./font/NotoSansCJKkr-Bold.eot") format("embedded-opentype"),
+		url("./font/NotoSansCJKkr-Bold.woff2") format("woff2"),
+		url("./font/NotoSansCJKkr-Bold.woff") format("woff"),
+		url("./font/NotoSansCJKkr-Bold.ttf") format("truetype");
+}
+
+
+/* 리셋 */
+html,
+body,
+div,
+span,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+address,
+pre,
+cite,
+form,
+fieldset,
+input,
+textarea,
+select,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+abbr,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  vertical-align: baseline;
+  outline: 0;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea,
+button,
+a {
+  font-family: 'NotoSans', sans-serif;
+  font-size: 16px;
+  color: #333;
+  font-weight: 400;
+}
+
+body{
+  background-color: #f6fafc;
+}
+
+/* _:-ms-fullscreen, :root body, */
+_:-ms-fullscreen,
+:root input,
+_:-ms-fullscreen,
+:root select,
+_:-ms-fullscreen,
+:root textarea,
+_:-ms-fullscreen,
+:root button,
+_:-ms-fullscreen,
+:root a {
+  transform: skew(-0.001deg);
+}
+
+input,
+select,
+textarea {
+  border-radius: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: 0;
+}
+
+select::-ms-expand {
+  display: none
+}
+
+fieldset,
+li,
+img {
+  border: 0;
+  vertical-align: top;
+  outline: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+button {
+  overflow: visible;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+button:-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+address,
+caption,
+em {
+  font-style: normal;
+}
+
+a,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: none;
+	color: black;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.hidden {
+  position:absolute !important;  
+  width:1px; 
+  height:1px; 
+  overflow:hidden;
+  clip:rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip:rect(1px, 1px, 1px, 1px);}
+
+
+  /* 스크롤 커스텀 */
+  .scroll-active::-webkit-scrollbar { width: 6px; } 
+  .scroll-active::-webkit-scrollbar-thumb { background-color: #ddd; width: 10px; height: 80px; border-radius: 10px; } 
+  .scroll-active::-webkit-scrollbar-track { background-color: #fff; border: 1px solid #e1e1e1; display: none; } 
+
+
+/* Encoding & Font */
+
+/*-------------------------------------------------------------*/
+
+
