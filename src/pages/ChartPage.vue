@@ -11,7 +11,7 @@
     </div>
     <div class="chart-box-content">
       <BarChart :PropsData="TableData" />
-      <DivTabe :TableData="TableData" />
+      <DivTable :TableData="TableData" />
     </div>
   </div>
   <!--     <div class="chart-box middle">
@@ -24,7 +24,7 @@
 
 <script>
 import PageTitle from "@/components/commom/PageTitle/PageTitle";
-import DivTabe from "@/components/commom/DivTabe";
+import DivTable from "@/components/commom/Table/DivTable";
 import BarChart from "@/components/pageComponent/Chart/BarChart";
 import axios from "axios";
 export default {
@@ -50,7 +50,7 @@ export default {
   },
   components: {
     PageTitle,
-    DivTabe,
+    DivTable,
     BarChart,
   },
 };

@@ -5,6 +5,7 @@
         <button
           type="button"
           @click="pageSetting.first !== null ? sendPage(pageSetting.first) : ''"
+          title="테이블 이전 버튼"
         >
           prevs
         </button>
@@ -16,12 +17,13 @@
         :key="page"
         @click="sendPage(page)"
       >
-        <button type="button">{{ page }}</button>
+        <button type="button" :title="page">{{ page }}</button>
       </li>
       <li class="page-item-next">
         <button
           type="button"
           @click="pageSetting.end !== null ? sendPage(pageSetting.end) : ''"
+          title="테이블 다음 버튼"
         >
           next
         </button>
@@ -69,11 +71,13 @@ export default {
   height: 100%;
 }
 
-.page-list .page-item.on {
+.page-list .page-item.on,
+.page-list .page-item:hover {
   border-color: #009894;
 }
 
-.page-list .page-item.on button {
+.page-list .page-item.on button,
+.page-list .page-item:hover button {
   color: #009894;
   font-weight: bold;
   text-decoration: underline;
