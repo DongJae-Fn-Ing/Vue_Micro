@@ -4,6 +4,7 @@ let tabData = [
     title: "탭타이틀1",
     tabItemData: [
       {
+        itemId: 1,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -12,14 +13,17 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 2,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1아이템 타이틀1아이템 타이틀1아이템 타이틀1",
         itemInfo1: "텍스트1-1텍스트1-1텍스트1-1텍스트1-1텍스트1-1텍스트1-1",
-        itemInfo2: "텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2",
+        itemInfo2:
+          "텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2텍스트1-2",
         itemState: false,
       },
       {
+        itemId: 3,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -28,6 +32,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 4,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -36,6 +41,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 5,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -44,6 +50,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 6,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -52,6 +59,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 7,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -60,6 +68,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 8,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -68,6 +77,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 9,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -76,6 +86,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 10,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -84,6 +95,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 11,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -92,6 +104,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 12,
         img: "https://via.placeholder.com/200x150.jpg",
         alt: "이미지 설명1",
         title: "아이템 타이틀1",
@@ -106,6 +119,7 @@ let tabData = [
     title: "탭타이틀2",
     tabItemData: [
       {
+        itemId: 1,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -114,6 +128,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 2,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -122,6 +137,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 3,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -130,6 +146,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 4,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -138,6 +155,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 5,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -146,6 +164,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 6,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -154,6 +173,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 7,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -162,6 +182,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 8,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -170,6 +191,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 9,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀2",
         alt: "이미지 설명2",
@@ -184,6 +206,7 @@ let tabData = [
     title: "탭타이틀3",
     tabItemData: [
       {
+        itemId: 1,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -192,6 +215,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 2,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -200,6 +224,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 3,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -208,6 +233,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 4,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -216,6 +242,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 5,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -224,6 +251,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 6,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -232,6 +260,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 7,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -240,6 +269,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 8,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -248,6 +278,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 9,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -256,6 +287,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 10,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀3",
         alt: "이미지 설명3",
@@ -270,6 +302,7 @@ let tabData = [
     title: "탭타이틀4",
     tabItemData: [
       {
+        itemId: 1,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -278,6 +311,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 2,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -286,6 +320,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 3,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -294,6 +329,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 4,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -302,6 +338,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 5,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -310,6 +347,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 6,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -318,6 +356,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 7,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -326,6 +365,7 @@ let tabData = [
         itemState: false,
       },
       {
+        itemId: 8,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",
@@ -334,6 +374,7 @@ let tabData = [
         itemState: true,
       },
       {
+        itemId: 9,
         img: "https://via.placeholder.com/200x150.jpg",
         title: "아이템 타이틀4",
         alt: "이미지 설명4",

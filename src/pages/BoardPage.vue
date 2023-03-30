@@ -6,25 +6,11 @@
     PathLast="게시판"
   />
   <div class="content-box">
-    <div class="table-box">
-      <table class="table">
-        <caption class="hidden">
-          접근성용 테이블에 대한 설명을 넣는 곳 입니다.
-        </caption>
-        <thead>
-          <tr>
-            <th v-for="(header, i) in header" :key="i">{{ header.title }}</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="(Data, i) in TableData" :key="i">
-            <td v-for="Key in headerKey" :key="Key + i" :title="Data[Key]">
-              {{ Data[Key] }}
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+    <Table
+      :Caption="`웹접근성 테이블 설명`"
+      :Header="header"
+      :TableData="TableData"
+    />
     <Pagination
       :pageSetting="pageDataSetting(total, limit, block, this.page)"
       @paging="pagingMethod"
@@ -34,6 +20,7 @@
 
 <script>
 import PageTitle from "@/components/commom/PageTitle/PageTitle";
+import Table from "@/components/commom/Table/Table";
 import Pagination from "@/components/commom/Pagination/Pagination";
 import axios from "axios";
 export default {
@@ -44,18 +31,30 @@ export default {
         {
           title: "id",
           value: "id",
+          width: "5%",
+          titleAlign: "cetner",
+          /*           align: "ceter", */
         },
         {
           title: "userId",
           value: "userId",
+          width: "5%",
+          titleAlign: "cetner",
+          /*           align: "cetner", */
         },
         {
           title: "title",
           value: "title",
+          width: "80%",
+          titleAlign: "cetner",
+          align: "left",
         },
         {
           title: "completed",
           value: "completed",
+          width: "10%",
+          titleAlign: "cetner",
+          /* align: "cetner", */
         },
       ] /* 여기는 props 받을 예정 */,
       TableData: [],
@@ -124,6 +123,7 @@ export default {
   components: {
     PageTitle,
     Pagination,
+    Table,
   },
 };
 </script>
@@ -155,6 +155,10 @@ thead tr th {
 thead tr th:not(:last-child),
 tbody tr td:not(:last-child) {
   border-right: 1px solid rgb(221, 221, 221);
+}
+
+tbody tr:hover td {
+  background-color: rgb(237, 248, 245);
 }
 
 tbody tr td {

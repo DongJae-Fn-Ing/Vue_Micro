@@ -4,7 +4,13 @@
       <img :src="ItemData.img" :alt="ItemData.alt" />
     </div>
     <div class="item-content">
-      <h3 class="item-title" :title="ItemData.title">{{ ItemData.title }}</h3>
+      <h3
+        class="item-title"
+        :title="ItemData.title"
+        @click="$router.push(`/mainDetail/` + ItemData.itemId)"
+      >
+        {{ ItemData.title }}
+      </h3>
       <ul class="item-info">
         <li :title="ItemData.itemInfo1">{{ ItemData.itemInfo1 }}</li>
         <li :title="ItemData.itemInfo2">{{ ItemData.itemInfo2 }}</li>
@@ -29,7 +35,7 @@ export default {
     };
   },
   props: {
-    ItemData: Array,
+    ItemData: Object,
   },
   methods: {},
 };
@@ -82,6 +88,11 @@ export default {
   line-height: 1;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.item-content .item-title:hover {
+  color: #058380;
 }
 
 .item-content .item-info {

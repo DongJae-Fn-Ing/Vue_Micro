@@ -37,7 +37,10 @@
       <h3 :title="BoxData.title || Title">{{ BoxData.title || BoxTitle }}</h3>
     </div>
     <div class="list">
-      <h4>! <br />데이터가 없어요</h4>
+      <h4>
+        <img src="./img/ico_warning.png" alt="주의 아이콘" /><br />데이터가
+        없어요
+      </h4>
     </div>
   </div>
 </template>
@@ -46,7 +49,7 @@
 export default {
   name: "BoxCom",
   props: {
-    BoxData: Array,
+    BoxData: Object,
     BoxType: String,
     BoxTitle: String,
   },

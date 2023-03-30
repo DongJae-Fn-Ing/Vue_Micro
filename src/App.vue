@@ -20,6 +20,7 @@ import Header from "./components/Header";
 /* 더미 데이터 */
 import MenuData from "./assets/data/menu";
 import UserData from "./assets/data/user";
+import TabData from "./assets/data/tabData";
 
 export default {
   name: "App",
@@ -29,6 +30,7 @@ export default {
       UserData: UserData,
       LoginData: "",
       MenuOnF: true,
+      TabData: TabData,
     };
   },
   methods() {},
@@ -73,7 +75,7 @@ export default {
   gap: 0 30px;
 }
 
-.content .content-box{
+.content .content-box {
   width: 100%;
   height: 100%;
   padding: 20px;
