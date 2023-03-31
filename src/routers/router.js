@@ -4,6 +4,7 @@ import MainDetail from "../pages/MainDetail.vue";
 import ChartPage from "../pages/ChartPage.vue";
 import BoardPage from "../pages/BoardPage.vue";
 import boardDetail from "../pages/BoardDetail.vue";
+import CrudPage from "@/pages/CrudPage.vue";
 
 const routes = [
   {
@@ -25,6 +26,10 @@ const routes = [
   {
     path: "/boardDetail/:id",
     component: boardDetail,
+  },
+  {
+    path: "/crud",
+    component: CrudPage,
   },
 ];
 

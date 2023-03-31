@@ -11,7 +11,7 @@
 export default {
   name: "DivTable",
   props: {
-    TableData: Object,
+    TableData: String,
   },
 };
 </script>

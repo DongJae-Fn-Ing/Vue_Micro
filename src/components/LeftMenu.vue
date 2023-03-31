@@ -47,11 +47,15 @@
         <li
           v-for="(menu, clickItem) in MenuData"
           :key="clickItem"
-          :class="menuNun === clickItem ? `menu-item on` : `menu-item`"
+          :class="
+            $store.state.maintainStore.menuNun === clickItem
+              ? `menu-item on`
+              : `menu-item`
+          "
         >
           <router-link
             :to="menu.link"
-            @click="menuOn(clickItem)"
+            @click="$store.commit('maintainStore/menuOn', clickItem)"
             :class="`menu-item-btn ${menu.title}`"
           >
             {{ menu.name }}
@@ -87,15 +91,7 @@ export default {
       subMenuOnOFF: false,
     };
   },
-  methods: {
-    menuOn(clickItem) {
-      this.toggle = this.menuNun;
-      this.menuNun = clickItem;
-      if (clickItem === this.toggle) {
-        this.menuNun = this.null;
-      }
-    },
-  },
+  methods: {},
   props: {
     MenuData: Object,
     UserData: Object,
@@ -338,6 +334,18 @@ export default {
 .gnb-menu .menu-item .menu-item-btn.setting:hover::before,
 .gnb-menu .menu-item.on .menu-item-btn.setting::before {
   background: url("../assets/img/ico_s_w.png") no-repeat center/ cover;
+}
+
+.gnb-menu .menu-item .menu-item-btn.crud::before {
+  width: 20px;
+  height: 20px;
+  background: url("../assets/img/ico_crud.png") no-repeat center/ cover;
+  left: 20px;
+}
+
+.gnb-menu .menu-item .menu-item-btn.crud:hover::before,
+.gnb-menu .menu-item.on .menu-item-btn.crud::before {
+  background: url("../assets/img/ico_crud_w.png") no-repeat center/ cover;
 }
 
 /* .gnb-menu .menu-item .menu-item-btn::after {

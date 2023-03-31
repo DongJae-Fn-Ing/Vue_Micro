@@ -27,5 +27,12 @@ let menu = [
     link: "/",
     /* content: ["테스트3"], */
   },
+  {
+    id: 4,
+    name: "CRUD",
+    title: "crud",
+    link: "/crud",
+    /* content: ["테스트3"], */
+  },
 ];
 export default menu;
