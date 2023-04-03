@@ -9,6 +9,7 @@ const store = createStore({
       instaAllData: InstaData,
       instaAllDataCopy: [...InstaData],
       more: {},
+      tabDataKey: 0,
     };
   },
 
@@ -29,6 +30,9 @@ const store = createStore({
     },
     setMore(state, data) {
       state.more = data;
+    },
+    changeTabDataKey(state, titleKey) {
+      state.tabDataKey = titleKey;
     },
   },
   plugins: [
