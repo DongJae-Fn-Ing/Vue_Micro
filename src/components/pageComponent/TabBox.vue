@@ -10,7 +10,9 @@
         >
           <button
             type="button"
-            @click="tabClick(titleKey), $emit(`TabKey`, titleKey)"
+            @click="tabClick(titleKey), $emit(`TabKey`, titleKey),
+            $store.commit('changeTabDataKey', titleKey)
+            "
             :title="data.title"
           >
             {{ data.title }}

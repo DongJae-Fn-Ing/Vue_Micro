@@ -5,7 +5,7 @@
       <div class="main" :class="{ on: MenuOnF === false }">
         <Header :MenuOnF="MenuOnF" @MenuChange="MenuOnF = $event" />
         <div class="content">
-          <router-view></router-view>
+          <router-view :TabData="TabData"></router-view>
         </div>
       </div>
     </div>
