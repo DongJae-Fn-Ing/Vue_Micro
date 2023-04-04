@@ -10,9 +10,10 @@ const maintainStore = {
     menuOn(state, clickItem) {
       state.toggle = state.menuNun;
       state.menuNun = clickItem;
-      if (clickItem === state.toggle) {
+      /*       state.tabDataKey = state.menuNun; */
+      /*       if (clickItem === state.toggle) {
         state.menuNun = state.null;
-      }
+      } */
     },
   },
   actions: {},

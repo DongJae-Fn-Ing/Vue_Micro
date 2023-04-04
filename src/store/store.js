@@ -34,11 +34,14 @@ const store = createStore({
     changeTabDataKey(state, titleKey) {
       state.tabDataKey = titleKey;
     },
+    reTabDataKey(state) {
+      state.tabDataKey = 0;
+    },
   },
   plugins: [
     createPersistedState({
       key: "vueStore",
-      paths: maintainStore,
+      paths: ["maintainStore"],
       storage: window.sessionStorage,
     }),
   ],
