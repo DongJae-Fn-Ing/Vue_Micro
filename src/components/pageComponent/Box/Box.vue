@@ -67,8 +67,8 @@ export default {
 
 .box .box-title {
   display: flex;
-  padding: 17px 21px;
   height: 50px;
+  padding: 17px 21px;
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid #ddd;
   background-color: #fff;

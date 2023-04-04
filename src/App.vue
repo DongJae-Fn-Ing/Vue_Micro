@@ -78,7 +78,6 @@ export default {
 .content .content-box {
   width: 100%;
   height: 100%;
-  padding: 20px;
   border: 1px solid #ddd;
   border-radius: 4px;
   background-color: #fff;

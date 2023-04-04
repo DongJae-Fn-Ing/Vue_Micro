@@ -55,7 +55,10 @@
         >
           <router-link
             :to="menu.link"
-            @click="$store.commit('maintainStore/menuOn', clickItem)"
+            @click="
+              $store.commit('maintainStore/menuOn', clickItem),
+                $store.commit('reTabDataKey')
+            "
             :class="`menu-item-btn ${menu.title}`"
           >
             {{ menu.name }}
