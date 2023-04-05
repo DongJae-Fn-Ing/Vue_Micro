@@ -25,8 +25,13 @@
             :title="Data[Key]"
             :style="{ textAlign: alignKey[a] }"
           >
-            <!--          <a href="" v-if="Data[Key] === title">{{ Data[Key] }}</a> -->
-            <p>{{ Data[Key] }}</p>
+            <a
+              href="#"
+              @click="$router.push(`/boardDetail/` + Data.id)"
+              v-if="Object.keys(Data)[a] === 'title'"
+              >{{ Data[Key] }}</a
+            >
+            <p v-else>{{ Data[Key] }}</p>
           </td>
         </tr>
       </tbody>

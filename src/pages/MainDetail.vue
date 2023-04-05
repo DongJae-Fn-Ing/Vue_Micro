@@ -1,5 +1,5 @@
 <template>
-  <div class="detail-box">
+  <div class="inner-box">
     <div class="detail-title">
       <h3>
         {{
@@ -37,15 +37,8 @@ export default {
 </script>
 
 <style>
-.detail-box {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #fff;
-}
 
-.detail-box .detail-title {
+.inner-box .detail-title {
   display: flex;
   height: 100px;
   padding: 0 20px;
@@ -54,11 +47,11 @@ export default {
   justify-content: space-between;
 }
 
-.detail-box .detail-title h3 {
+.inner-box .detail-title h3 {
   font-size: 28px;
 }
 
-.detail-box .detail-content {
+.inner-box .detail-content {
   padding: 20px;
   min-height: 630px;
 }

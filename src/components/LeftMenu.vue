@@ -2,7 +2,14 @@
   <nav class="side-menu" :class="{ close: MenuOnF === false }">
     <div class="side-menu-sub">
       <h1 class="logo">
-        <router-link to="/">마이크로 로고</router-link>
+        <router-link
+          to="/"
+          @click="
+            $store.commit('maintainStore/menuOn', 0),
+              $store.commit('reTabDataKey')
+          "
+          >마이크로 로고</router-link
+        >
       </h1>
       <div class="user-info">
         <div class="user-title">

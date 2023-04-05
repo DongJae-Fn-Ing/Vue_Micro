@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h3>게시판 타이틀</h3>
-    <p>게시판 콘텐츠</p>
+  <div class="inner-box">
+    <h3>게시판 타이틀{{ $route.params.id }}</h3>
+    <p>게시판 콘텐츠{{ $route.params.id }}</p>
   </div>
 </template>
 

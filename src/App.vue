@@ -70,12 +70,20 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-  padding: 40px;
+    padding: 20px 40px 0;
   flex-wrap: wrap;
   gap: 0 30px;
 }
 
 .content .content-box {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.inner-box {
   width: 100%;
   height: 100%;
   border: 1px solid #ddd;
