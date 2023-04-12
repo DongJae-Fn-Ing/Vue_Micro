@@ -24,7 +24,13 @@ ChartJS.register(
 );
 export default {
   name: "ChartCom",
+  computed: {
+    pdata() {
+      return this.PropsData.map((PropsData) => PropsData.id);
+    },
+  },
   components: { Bar },
+
   data() {
     return {
       chartData: {
@@ -39,7 +45,7 @@ export default {
   },
   methods: {
     asd() {
-      console.log(this.PropsData[0]);
+      console.log(this.pdata);
     },
   },
   props: {

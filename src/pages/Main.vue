@@ -1,8 +1,9 @@
 <template>
   <TabBox TabTitle="탭박스 타이틀" :TabData="TabData" @TabKey="TabKey = $event">
     <TabItem
-      v-for="(item, i) in TabData[TabKey].tabItemData"
+      v-for="(item, i) in TabData[$store.state.tabDataKey].tabItemData"
       :key="i"
+      :keyNumber="i"
       :ItemData="item"
     />
   </TabBox>

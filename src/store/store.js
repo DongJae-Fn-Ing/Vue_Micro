@@ -1,6 +1,7 @@
 import { createStore } from "vuex";
 import createPersistedState from "vuex-persistedstate";
 import InstaData from "../assets/data/instaData";
+import TabData from "@/assets/data/tabData";
 import maintainStore from "./module/maintainStore";
 
 const store = createStore({
@@ -9,6 +10,8 @@ const store = createStore({
       instaAllData: InstaData,
       instaAllDataCopy: [...InstaData],
       more: {},
+      tabData: TabData,
+      tabDataCopy: [...TabData],
       tabDataKey: 0,
     };
   },
@@ -36,6 +39,10 @@ const store = createStore({
     },
     reTabDataKey(state) {
       state.tabDataKey = 0;
+    },
+    tabItem(state, data) {
+      state.tabData[state.tabDataKey].tabItemData[data].itemState =
+        !state.tabData[state.tabDataKey].tabItemData[data].itemState;
     },
   },
   plugins: [

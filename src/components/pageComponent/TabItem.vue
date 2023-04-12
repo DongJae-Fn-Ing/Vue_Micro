@@ -18,7 +18,8 @@
       <button
         type="button"
         class="btn"
-        :disabled="ItemData.itemState === false"
+        :class="ItemData.itemState === true ? '' : 'disabled' "
+        @click="$store.commit('tabItem', keyNumber)"
       >
         {{ ItemData.itemState === true ? "활성화" : "비활성화" }}
       </button>
@@ -31,13 +32,15 @@ export default {
   name: "TabItem",
   data() {
     return {
-      stateChange: "",
+      stateChange: ""
     };
   },
   props: {
     ItemData: Object,
+    keyNumber: Number,
   },
-  methods: {},
+  methods: {
+  },
 };
 </script>
 
@@ -133,7 +136,7 @@ export default {
   color: #fff;
   font-size: 14px;
 }
-.item-content .btn[disabled] {
+.item-content .btn.disabled {
   background-color: #666;
 }
 
