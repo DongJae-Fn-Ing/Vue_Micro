@@ -87,6 +87,9 @@
       </ul>
     </div>
   </nav>
+  <nav class="side-menu mobile" :class="{ close: MenuOnF === false }">
+
+  </nav>
 </template>
 
 <script>
@@ -423,4 +426,10 @@ export default {
 .menu-2dep .menu-2dep-item.on .menu-2dep-item-btn::before {
   background-color: #00c8aa;
 } */
+
+@media (max-width: 768px){
+  .side-menu{
+    display: none;
+  }
+}
 </style>

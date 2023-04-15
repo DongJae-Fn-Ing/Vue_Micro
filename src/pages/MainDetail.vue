@@ -38,21 +38,4 @@ export default {
 
 <style>
 
-.inner-box .detail-title {
-  display: flex;
-  height: 100px;
-  padding: 0 20px;
-  border-bottom: 1px solid #ddd;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.inner-box .detail-title h3 {
-  font-size: 28px;
-}
-
-.inner-box .detail-content {
-  padding: 20px;
-  min-height: 630px;
-}
 </style>

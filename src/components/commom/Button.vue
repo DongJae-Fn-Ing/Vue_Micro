@@ -44,4 +44,14 @@ export default {
 .ico.user {
   background: url("../../assets/img/ico_user.png") no-repeat center / cover;
 }
+
+@media (max-width: 768px) {
+  .ico.m-open{
+    transform: rotateZ(90deg);
+  }
+
+  .ico.m-close {
+  transform: rotateZ(-90deg);
+}
+}
 </style>
