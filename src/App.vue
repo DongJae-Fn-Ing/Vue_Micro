@@ -43,6 +43,7 @@ export default {
 </script>
 
 <style>
+
 .wrap {
   position: relative;
   width: 100%;
@@ -70,7 +71,7 @@ export default {
   display: flex;
   width: 100%;
   height: 100%;
-    padding: 20px 40px 0;
+  padding: 20px 40px 0;
   flex-wrap: wrap;
   gap: 0 30px;
 }
@@ -107,5 +108,12 @@ export default {
 .inner-box .detail-content {
   padding: 20px;
   min-height: 630px;
+}
+
+@media (max-width: 768px){
+  .sub-wrap .main{
+    width: 100%;
+    margin-left: 0;
+  }
 }
 </style>

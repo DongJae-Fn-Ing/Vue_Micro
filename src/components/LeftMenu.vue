@@ -87,8 +87,42 @@
       </ul>
     </div>
   </nav>
-  <nav class="side-menu mobile" :class="{ close: MenuOnF === false }">
-
+  <nav class="side-menu mobile" :class="{ close: MenuOnF === true }">
+    <ul class="gnb-menu scroll-active">
+        <li
+          v-for="(menu, clickItem) in MenuData"
+          :key="clickItem"
+          :class="
+            $store.state.maintainStore.menuNun === clickItem
+              ? `menu-item on`
+              : `menu-item`
+          "
+        >
+          <router-link
+            :to="menu.link"
+            @click="
+              $store.commit('maintainStore/menuOn', clickItem),
+                $store.commit('reTabDataKey')
+            "
+            :class="`menu-item-btn ${menu.title}`"
+          >
+            {{ menu.name }}
+          </router-link>
+          <!--           <ul class="menu-2dep">
+            <li
+              :class="
+                subMenuOnOFF === false ? `menu-2dep-item` : `menu-2dep-item on`
+              "
+              v-for="(subMenu, subMenuKey) in menu.content"
+              :key="subMenuKey"
+            >
+              <button type="button" class="menu-2dep-item-btn">
+                {{ subMenu }}
+              </button>
+            </li>
+          </ul> -->
+        </li>
+      </ul>
   </nav>
 </template>
 
@@ -427,9 +461,34 @@ export default {
   background-color: #00c8aa;
 } */
 
+.side-menu.mobile{
+  display: none;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.side-menu.mobile .gnb-menu{
+ margin-top: 60px;
+}
+
+.side-menu.mobile.close{
+  left: 0;
+  height: 0;
+}
+
+.side-menu.mobile.close .gnb-menu{
+  height: 0;
+} 
+
 @media (max-width: 768px){
+
   .side-menu{
-    display: none;
+  display: none;
   }
+
+ .side-menu.mobile{
+  display: block;
+ }
 }
 </style>
