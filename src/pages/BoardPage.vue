@@ -6,6 +6,7 @@
     PathLast="게시판"
   />
   <div class="content-box">
+    <SearchFrom/>
     <Table
       :Caption="`웹접근성 테이블 설명`"
       :Header="header"
@@ -22,6 +23,7 @@
 import PageTitle from "@/components/commom/PageTitle/PageTitle";
 import Table from "@/components/commom/Table/Table";
 import Pagination from "@/components/commom/Pagination/Pagination";
+import SearchFrom from "@/components/commom/SearchFrom/SearchFrom";
 import axios from "axios";
 export default {
   name: "TablePage",
@@ -124,6 +126,7 @@ export default {
     PageTitle,
     Pagination,
     Table,
+    SearchFrom,
   },
 };
 </script>
@@ -167,4 +170,9 @@ tbody tr td {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+
+
+
+
 </style>

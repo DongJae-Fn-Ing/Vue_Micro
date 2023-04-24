@@ -13,6 +13,24 @@ export default {
 </script>
 
 <style>
+
+.btn{
+  height: 40px;
+  padding: 0 15px;
+  color: #fff;
+  font-weight: bold;
+  background-color: #009894;
+  border: 1px solid #009894;
+  border-radius: 4px;
+}
+
+.btn.small{
+  height: 35px;
+  padding: 0 10px;
+  font-weight: normal;
+  font-size: 14px;
+}
+
 .ico {
   width: 24px;
   height: 24px;

@@ -13,6 +13,7 @@ const store = createStore({
       tabData: TabData,
       tabDataCopy: [...TabData],
       tabDataKey: 0,
+      searchData: "",
     };
   },
 
@@ -43,6 +44,11 @@ const store = createStore({
     tabItem(state, data) {
       state.tabData[state.tabDataKey].tabItemData[data].itemState =
         !state.tabData[state.tabDataKey].tabItemData[data].itemState;
+    },
+    inputData(state, inputText){
+      state.searchData = inputText;
+      console.log("텍스트:::", inputText);
+      /* searchData가 테이블 데이타 타이틀값에 포함되는 것이 있고 옆에 버튼을 누르면 재랜더링 */
     },
   },
   plugins: [
