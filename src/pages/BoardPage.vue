@@ -25,6 +25,7 @@ import Table from "@/components/commom/Table/Table";
 import Pagination from "@/components/commom/Pagination/Pagination";
 import SearchFrom from "@/components/commom/SearchFrom/SearchFrom";
 import axios from "axios";
+
 export default {
   name: "TablePage",
   data() {

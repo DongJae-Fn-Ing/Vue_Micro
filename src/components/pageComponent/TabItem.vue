@@ -17,7 +17,7 @@
       </ul>
       <button
         type="button"
-        class="btn"
+        class="item-btn"
         :class="ItemData.itemState === true ? '' : 'disabled' "
         @click="$store.commit('tabItem', keyNumber)"
       >
@@ -127,7 +127,7 @@ export default {
   transform: translateY(-50%);
 }
 
-.item-content .btn {
+.item-content .item-btn {
   padding: 0 10px;
   width: 70px;
   height: 28px;
@@ -136,7 +136,7 @@ export default {
   color: #fff;
   font-size: 14px;
 }
-.item-content .btn.disabled {
+.item-content .item-btn.disabled {
   background-color: #666;
 }
 

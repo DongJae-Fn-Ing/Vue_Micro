@@ -5,7 +5,7 @@
           <label for="search">검색</label>
           <Input type="search" name="search" id="search" class="input" style="width: 100%;" placeholder="검색어를 입력하세요."
           />
-          <Button className="btn small" type="button">검색</Button>
+          <Button @click="$store.dispatch('getData')" className="btn small" type="button">검색</Button>
         </div>
       </form>
     </div>
