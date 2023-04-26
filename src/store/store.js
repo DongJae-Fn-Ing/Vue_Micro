@@ -53,13 +53,18 @@ const store = createStore({
     },
 
     axiosSave(state, Data) {
-      state.axiosData = Data;
-      console.log("저장된 거:::", state.axiosData);
-      let asd = [];
-      state.axiosData.data.forEach((a) => {
-        return asd.push(a.title);
+      console.log("저장된 거:::", Data);
+      let DataTitle = [];
+      Data.data.forEach((a) => {
+        return DataTitle.push(a.title);
       });
-      console.log("저장된 데이타:::", asd);
+
+      console.log(
+        "axiosData 저장된 데이타:::",
+        DataTitle.filter((e) => {
+          return e.indexOf(state.searchData);
+        })
+      );
     },
 
     /* 엑시오스 데이터 받아와서 저장하는 함수 */
